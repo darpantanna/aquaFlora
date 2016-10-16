@@ -16,6 +16,10 @@ _url = 'https://api.projectoxford.ai/vision/v1/analyses'
 _key = "a2219199d5834848a8e0546e2645a870"
 _maxNumRetries = 10
 def processRequest( json, data, headers, params ):
+
+    params = {
+        'visualFeatures':'Tags'
+    }
     #print('hello')
 
     """
@@ -104,6 +108,7 @@ def getDatAnalysis():
     data = None
 
     result = processRequest( json, data, headers, params )
+    print(result)
 
     if result is not None:
         # Load the original image, fetched from the URL
