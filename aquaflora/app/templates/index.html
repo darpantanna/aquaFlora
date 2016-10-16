@@ -54,7 +54,11 @@
 					<header>
 						<h2>Image Detection</h2>
 					</header>
-					<p><form method="POST" action="/onClick"><input type="text" name="link" placeholder="Link"><input type="submit" value="Detect Image"></form></p>
+					<p>
+					<form method="POST" action="/onClick">
+					<label for="file">Choose a file:</label>
+					<input type="file" name="file1">
+					<input type="text" name="link" placeholder="Link"><input type="submit" value="Detect Image"></form></p>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
@@ -161,6 +165,8 @@
 			<script src="static/js/util.js"></script>
 			<!--[if lte IE 8]><script src="static/js/ie/respond.min.js"></script><![endif]-->
 			<script src="static/js/main.js"></script>
+
+
 
 	</body>
 </html>
